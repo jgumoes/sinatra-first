@@ -8,12 +8,6 @@ img.resize {
 }
 </style>
 <body>
-  <% if @name == nil %>
-    <form action="/named-cat" method="get">
-      <input type="text" id="name" name="name">
-      <input type="submit" id="submit" name="submit">
-    </form>
-  <% end %>
   <h1> My name is <%=@name %></h1>
 <div>
   <img class='resize' src='https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg'>
