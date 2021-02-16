@@ -13,6 +13,13 @@ get '/insult' do
   "yo mama"
 end
 
-get '/cat' do
+get '/random-cat' do
+  @name = ["Amigo", "Misty", "Almond"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  puts params[:name]
+  @name = params[:name]
   erb(:index)
 end

@@ -1,12 +1,14 @@
 <style>
 img.resize {
-  max-width:90%;
+  width: auto;
+  height: 100%;
+  max-height: 90vh;
   border: 3px dashed red;
   margin-left: 5%;
 }
 </style>
 <body>
-  <h1> My name is <%=["Amigo", "Misty", "Almond"].sample %></h1>
+  <h1> My name is <%=@name %></h1>
 <div>
   <img class='resize' src='https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg'>
 </div>
